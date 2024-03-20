@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css' ) }}">
+    <title>SeeSharp</title>
+</head>
+<body class="body">
+    <div class="Header">
+        <h1>SEESHARP</h1>
+    </div>
+    <div class="person-selector">
+        <form onsubmit= "handleFormSubmit(event)">
+            <button type = "submit"  class="button person-selector-button active-person" id="submit-button">Submit</button>
+            <input type="file" id="image" name="image" accept = "image/jpeg, image/png, image/jpg" />
+        </form>
+        
+        
+    </div>
+    <div class="image-container">
+        <img src="static/images/new_image.png" alt="output-image" id="output-image" class="invisible">
+    </div>
+    <script src="{{ url_for('static', filename='script/script.js' ) }}"></script>
+</body>
+</html>

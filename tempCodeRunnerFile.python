@@ -1,0 +1,10 @@
+points = [[3,9],[7,12],[3,8],[6,8],[9,10],[2,9],[0,9],[3,9],[0,6],[2,8]]
+points.sort()
+print(points)
+arrows = len(points)
+i = 0
+while i < arrows - 1:
+    if points[i][1] >= points[i+1][0]:
+        arrows -= 1
+    i += 1
+print(arrows)
